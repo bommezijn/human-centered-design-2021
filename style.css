@@ -22,7 +22,7 @@ article {
 }
 
 header p {
-  width: 65ch;
+  max-width: 65ch;
 }
 
 .opt65 {
@@ -30,11 +30,11 @@ header p {
 }
 
 .opt30em {
-  width: 30em;
+  max-width: 30em;
 }
 
 .opt100per {
-  width: 100%;
+  max-width: 100%;
 }
 
 h1, h2, h3 {
@@ -49,3 +49,9 @@ pre {
 code{
   font-family: courier, monospace;
 }
+
+code > #text{
+  background-color: red;
+
+}
+
