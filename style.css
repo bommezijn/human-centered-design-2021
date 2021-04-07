@@ -16,7 +16,7 @@ header{
 }
 
 main{
-  width: 80vw;
+  /* width: 80vw; */
   margin: 0 auto;
 }
 
@@ -27,8 +27,8 @@ article {
   border: 2px solid #e6b800;
 }
 
-p {
-  max-width: 65ch;
+header p {
+  width: 65ch;
 }
 
 .opt65 {
@@ -39,8 +39,8 @@ p {
   width: 30em;
 }
 
-.opt100vw {
-  width: 100vw;
+.opt100per {
+  width: 100%;
 }
 
 h1, h2, h3 {
