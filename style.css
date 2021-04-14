@@ -25,8 +25,19 @@ header section article p {
   display: inline-block;
 }
 
-header section {
+header {
   margin-bottom: 2em;
+}
+
+
+details {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 0.5em .5em 0;
+}
+
+details:focus, details:focus-within{
+  background-color: #e5e5e5;
 }
 
 main{
