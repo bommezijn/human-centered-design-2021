@@ -13,3 +13,7 @@ document.getElementById("lineHeight").oninput = () => {
   });
   document.getElementById("lineHeightShow").textContent = lhSize;
 };
+
+// document.getElementById("visible").addEventListener("click", () => {
+//   document.querySelectorAll("section ul li").style.opacity = "0.5";
+// });
