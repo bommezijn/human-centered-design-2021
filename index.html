@@ -10,24 +10,43 @@
 </head>
 
 <body>
-
+  <header>
+    <h1>Text length per paragraph</h1>
+    <p>How much text per line is too much, considering the user have to read on the pace of the podcast.</p>
+    <p>What device do you commonly use to read podcasts?</p>
+    <section>
+      <article>
+        <input type="range" name="fontSize" id="fontSize" min="10" max="40" value="20" step="1">
+        <p>Font size: <span id="fontSizeShow">20</span>px</p>
+      </article>
+      <article>
+        <input type="range" name="lineHeight" id="lineHeight" min="12" max="48" value="24" step="2">
+        <p>Line height: <span id="lineHeightShow">24</span>px</p>
+      </article>
+    </section>
+  </header>
   <main>
-    <header>
-      <h1>Text length per paragraph</h1>
-      <p>How much text per line is too much, considering the user have to read on the pace of the podcast.</p>
-      <p>What device do you commonly use to read podcasts?</p>
-      <section>
-        <article>
-          <input type="range" name="fontSize" id="fontSize" min="10" max="40" value="20" step="1">
-          <p>Font size: <span id="fontSizeShow">20</span>px</p>
-        </article>
-        <article>
-          <input type="range" name="lineHeight" id="lineHeight" min="12" max="48" value="24" step="2">
-          <p>Line height: <span id="lineHeightSize">24</span>px</p>
-        </article>
-      </section>
-    </header>
+    <section class="about-podcast">
+      <h1>The One Where Heckles Dies</h1>
+      <p class="podcast-duration">47 minutes, 41 seconds</p>
+      <p class="podcast-description">
+        It’s our 100th episode! We’re pretty sure anyway! And it’s the final episode of this series of FWF, but fear not, we won’t be away for long.
+        It’s all about saying goodbye to Mr Heckles this week even though, let’s face it, he turned out to be a massive creep. Plus: evolution, lamps and Adam’s apples.
+      </p>
+      <a href="https://play.acast.com/s/friendswithfriends/theonewherehecklesdies">Acast, Friend with Friends, ep. 100</a>
+      <iframe id="podcast" title="Embed Player" src="https://embed.acast.com/7146590b-19a1-40dc-b253-19182e524c2a/40642d1b-a82c-481b-99bc-a789fc63fde8" scrolling="no" frameBorder="0"></iframe>
+    </section>
+    <section id="chat">
+      <h1>Transcription</h1>
+      <ul>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi illum expedita eveniet quibusdam laborum quisquam voluptas officiis eaque minima placeat delectus, hic eligendi optio ad corrupti! Exercitationem velit sit nemo!</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi illum expedita eveniet quibusdam laborum quisquam voluptas officiis eaque minima placeat delectus, hic eligendi optio ad corrupti! Exercitationem velit sit nemo!</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi illum expedita eveniet quibusdam laborum quisquam voluptas officiis eaque minima placeat delectus, hic eligendi optio ad corrupti! Exercitationem velit sit nemo!</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi illum expedita eveniet quibusdam laborum quisquam voluptas officiis eaque minima placeat delectus, hic eligendi optio ad corrupti! Exercitationem velit sit nemo!</li>
+      </ul>
+    </section>
   </main>
+  <script src="index.js"></script>
 </body>
 
 </html>
