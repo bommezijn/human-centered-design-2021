@@ -103,6 +103,11 @@ main{
   font-weight: 700;
   text-decoration: underline;
 }
+.podcast-source::before{
+  content: 'Source:';
+  font-weight: 700;
+  text-decoration: underline;
+}
 
 #chat {
   color:#0044CC;
