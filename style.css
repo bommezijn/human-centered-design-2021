@@ -1,3 +1,10 @@
+:root {
+  --bg: #f2f2f2;
+  --bg-acc: #F4E00B;
+  --special-effect: #4F3267;
+  --shadow: #F2F4F8;
+}
+
 * {
   box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
@@ -5,7 +12,7 @@
 
 body {
   line-height: 1.6;
-  background-color: #f2f2f2;
+  background-color: var(--bg);
   color: #1a1a1a;
 }
 
@@ -18,6 +25,10 @@ header section article p {
   display: inline-block;
 }
 
+header section {
+  margin-bottom: 2em;
+}
+
 main{
   width: 80vw;
   margin: 0 auto;
@@ -28,7 +39,9 @@ main{
 
 .about-podcast {
   padding: 1em;
-  background-color: #ffcc00;
+  background-color: var(--bg-acc);
+  border-radius: 5px;
+  box-shadow: 0 0 10px #888888;
 }
 
 #podcast {
@@ -40,7 +53,6 @@ main{
 
 .about-podcast p {
   max-width: 65ch;
-
 }
 
 .podcast-description::before{
@@ -52,4 +64,25 @@ main{
   content: 'Duration:';
   font-weight: 700;
   text-decoration: underline;
+}
+
+#chat {
+  max-height: 400px;
+  overflow: scroll;
+}
+
+#chat li:first-of-type {
+  font-weight: bold;
+}
+
+#chat :not(li:first-of-type, .sound) {
+  opacity: 0.2;
+}
+
+.sound {
+  color: var(--special-effect);
+  font-style: italic;
+  font-weight: lighter;
+  word-wrap: break-word;
+
 }
