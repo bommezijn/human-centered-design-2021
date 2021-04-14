@@ -2,6 +2,10 @@
 
 [To read about my process about Human Centered Design, check out my wiki](https://github.com/dewarian/human-centered-design-2021/wiki).
 
+https://podcasts.apple.com/gb/podcast/the-one-where-heckles-dies/id1341451107?i=1000517029522
+
+https://play.acast.com/s/friendswithfriends/theonewherehecklesdies
+
 # Human Centered Design @cmda-minor-web 2021
 
 //Interactie ontwerpen: Rapid prototypen en testen met echte mensen
