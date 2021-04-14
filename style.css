@@ -111,7 +111,6 @@ main{
 #chat li:nth-of-type(2n)::marker {
   content: "PA";
   font-weight: bold;
-
 }
 
 #chat li:nth-of-type(2n+3)::marker {
@@ -122,6 +121,10 @@ main{
 
 #chat :not(li:first-of-type, .sound) {
   /* opacity: 0.2; */
+}
+
+#chat a {
+  font-weight: bold;
 }
 
 .sound {
