@@ -11,20 +11,24 @@
 
 <body>
   <header>
-    <h1>Overall feel</h1>
-    <p>How important is the podcast information?</p>
-    <p>What does it mean when the transcription text is not fully visible?</p>
-    <section>
-      <h3>Font settings</h3>
-      <article>
-        <input type="range" name="fontSize" id="fontSize" min="10" max="40" value="20" step="1">
-        <p>Font size: <span id="fontSizeShow">20</span>px</p>
-      </article>
-      <article>
-        <input type="range" name="lineHeight" id="lineHeight" min="12" max="48" value="24" step="2">
-        <p>Line height: <span id="lineHeightShow">24</span>px</p>
-      </article>
-    </section>
+    <ul>
+      <h1>Overall feel</h1>
+      <li>How important is the podcast information to you?</li>
+      <li>What does it mean to you when the transcription text is not fully visible?</li>
+    </ul>
+    <details>
+      <summary>Font Settings</summary>
+      <section>
+        <article>
+          <input type="range" name="fontSize" id="fontSize" min="10" max="40" value="20" step="1">
+          <p>Font size: <span id="fontSizeShow">20</span>px</p>
+        </article>
+        <article>
+          <input type="range" name="lineHeight" id="lineHeight" min="12" max="48" value="24" step="2">
+          <p>Line height: <span id="lineHeightShow">24</span>px</p>
+        </article>
+      </section>
+    </details>
   </header>
   <main>
     <section class="about-podcast">
