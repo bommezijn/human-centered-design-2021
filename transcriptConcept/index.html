@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test: User Interface</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <ul>
+      <h1>Overall feel</h1>
+      <li>How important is the podcast information to you?</li>
+      <li>What does it mean to you when the transcription text is not fully visible?</li>
+      <li>What is your opinion about Accesskeys? <kbd>shift</kbd>+<kbd>ctrl</kbd>+<kbd>opt</kbd>+<kbd>i</kbd></li>
+      <li>What <b>annoys</b> you from transcripts?</li>
+    </ul>
+    <details>
+      <summary>Font Settings</summary>
+      <section>
+        <article>
+          <input type="range" name="fontSize" id="fontSize" min="10" max="40" value="20" step="1">
+          <p>Font size: <span id="fontSizeShow">20</span>px</p>
+        </article>
+        <article>
+          <input type="range" name="lineHeight" id="lineHeight" min="12" max="48" value="24" step="2">
+          <p>Line height: <span id="lineHeightShow">24</span>px</p>
+        </article>
+      </section>
+    </details>
+  </header>
+  <main>
+    <section class="about-podcast">
+      <h1>The One Where Heckles Dies</h1>
+      <p class="podcast-duration">47 minutes, 41 seconds</p>
+      <p class="podcast-description">
+        It’s our 100th episode! We’re pretty sure anyway! And it’s the final episode of this series of FWF, but fear not, we won’t be away for long.
+        It’s all about saying goodbye to Mr Heckles this week even though, let’s face it, he turned out to be a massive creep. Plus: evolution, lamps and Adam’s apples.
+      </p>
+      <p class="podcast-source"> <a href="https://play.acast.com/s/friendswithfriends/theonewherehecklesdies">Acast, Friend with Friends, ep. 100</a>s</p>
+      <iframe id="podcast" title="Embed Player" src="https://embed.acast.com/7146590b-19a1-40dc-b253-19182e524c2a/40642d1b-a82c-481b-99bc-a789fc63fde8" scrolling="no" frameBorder="0"></iframe>
+    </section>
+    <section>
+      <h1>Transcription</h1>
+      <ul id="chat">
+        <li><span class="sound">[OWL SOUND]</span> ... The following podcast is a member of the big owl family. <span class="sound">[FRIENDS INTRO]</span></li>
+        <li>Hellow, welcome to this final episode of this series! Of guitars fifteenth biggest film and tv's podcast.. fiends of friends P Allison and this is Steve Crib.</li>
+        <li> AYOH hoy happy birthday P! </li>
+        <li>THANKYOU..., I mean eh... My birthday is tomorrow, at which point this episode won't be out</li>
+        <li>ya awhh.., Yea your birthday's right between recording and it going out. that's the problem, isn't it?</li>
+        <li>NaAh, I'll take that happy birthday thank you</li>
+        <li>Yeah.. As you follow us on Instagram at <a title="Instagram link to the post that PA mentioned" href="https://www.instagram.com/p/CNpHgKkHpsc/" accesskey="i">@fwfpod</a>, you'll kno that P's Happy Birthday iss on Saturday</li>
+        <li>eh, yea</li>
+        <li>That's this weekend.</li>
+        <li>That's two days before</li>
+        <li>Y'know what I realised? What happened tho P? I realised that what's at stake.</li>
+        <li>Whatsthat?</li>
+      </ul>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+
+</html>

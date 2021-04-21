@@ -5,60 +5,73 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test: User Interface</title>
-  <link rel="stylesheet" href="style.css">
+  <title>test: humanity</title>
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-  <header>
+  <nav>
     <ul>
-      <h1>Overall feel</h1>
-      <li>How important is the podcast information to you?</li>
-      <li>What does it mean to you when the transcription text is not fully visible?</li>
-      <li>What is your opinion about Accesskeys? <kbd>shift</kbd>+<kbd>ctrl</kbd>+<kbd>opt</kbd>+<kbd>i</kbd></li>
-      <li>What <b>annoys</b> you from transcripts?</li>
+      <a href="/index.html">Transcript</a>
+      <li><a href="/lineLength/">Test one</a></li>
+      <li><a href="/transcriptConcept/">Test Two</a></li>
+      <li><a href="https://www.github.com/dewarian/human-centered-design-2021">Github</a></li>
+      <li></li>
     </ul>
-    <details>
-      <summary>Font Settings</summary>
-      <section>
-        <article>
-          <input type="range" name="fontSize" id="fontSize" min="10" max="40" value="20" step="1">
-          <p>Font size: <span id="fontSizeShow">20</span>px</p>
-        </article>
-        <article>
-          <input type="range" name="lineHeight" id="lineHeight" min="12" max="48" value="24" step="2">
-          <p>Line height: <span id="lineHeightShow">24</span>px</p>
-        </article>
-      </section>
-    </details>
+  </nav>
+  <header>
+    <h1>Test: Humane interaction</h1>
+    <p>The idea of this test is find out what feels more humane to you.</p>
+    <p class="question">The transcript about <i>the power of the black hole</i> is spoken by multiple people, which
+      speaker looks more pleasant to read?</p>
   </header>
   <main>
-    <section class="about-podcast">
-      <h1>The One Where Heckles Dies</h1>
-      <p class="podcast-duration">47 minutes, 41 seconds</p>
-      <p class="podcast-description">
-        It’s our 100th episode! We’re pretty sure anyway! And it’s the final episode of this series of FWF, but fear not, we won’t be away for long.
-        It’s all about saying goodbye to Mr Heckles this week even though, let’s face it, he turned out to be a massive creep. Plus: evolution, lamps and Adam’s apples.
-      </p>
-      <p class="podcast-source"> <a href="https://play.acast.com/s/friendswithfriends/theonewherehecklesdies">Acast, Friend with Friends, ep. 100</a>s</p>
-      <iframe id="podcast" title="Embed Player" src="https://embed.acast.com/7146590b-19a1-40dc-b253-19182e524c2a/40642d1b-a82c-481b-99bc-a789fc63fde8" scrolling="no" frameBorder="0"></iframe>
-    </section>
-    <section>
-      <h1>Transcription</h1>
-      <ul id="chat">
-        <li><span class="sound">[OWL SOUND]</span> ... The following podcast is a member of the big owl family. <span class="sound">[FRIENDS INTRO]</span></li>
-        <li>Hellow, welcome to this final episode of this series! Of guitars fifteenth biggest film and tv's podcast.. fiends of friends P Allison and this is Steve Crib.</li>
-        <li> AYOH hoy happy birthday P! </li>
-        <li>THANKYOU..., I mean eh... My birthday is tomorrow, at which point this episode won't be out</li>
-        <li>ya awhh.., Yea your birthday's right between recording and it going out. that's the problem, isn't it?</li>
-        <li>NaAh, I'll take that happy birthday thank you</li>
-        <li>Yeah.. As you follow us on Instagram at <a title="Instagram link to the post that PA mentioned" href="https://www.instagram.com/p/CNpHgKkHpsc/" accesskey="i">@fwfpod</a>, you'll kno that P's Happy Birthday iss on Saturday</li>
-        <li>eh, yea</li>
-        <li>That's this weekend.</li>
-        <li>That's two days before</li>
-        <li>Y'know what I realised? What happened tho P? I realised that what's at stake.</li>
-        <li>Whatsthat?</li>
-      </ul>
+    <section id="testOne">
+      <div style="max-width:854px">
+        <div style="position:relative;height:0;padding-bottom:56.25%">
+          <iframe
+            src="https://embed.ted.com/talks/fabio_pacucci_could_we_harness_the_power_of_a_black_hole/transcript#t-50750" width="854"
+            height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no"
+            allowfullscreen>
+          </iframe>
+          </div>
+      </div>
+      <h2>Transcription</h2>
+      <div class="transcript">
+        <span class="information">Speaker</span>
+        <span class="information">time</span>
+        <p class="information">Says</p>
+        <span>Intro</span>
+        <span><span class="timestamp">00:00</span></span>
+        <p class="sound">[Introductory Alien Space Sound]</p>
+        <span class="speaker">Meghan Regior</span>
+        <span><span class="timestamp">00:43</span></span>
+        <p>Imagine a distant future when humans reach beyond our pale blue dot, forge cities on planets thousands of
+          light-years away, and maintain a galactic web of trade and transport. What would it take for our civilization
+          to make that leap? There are many things to consider— <br> <i>how would we communicate?</i> <br><i>What might a galactic
+            government look like?</i><br> And one of the most fundamental of all: where would we get enough energy to power that
+          civilization— its industry, its terraforming operations, and its starships? </p>
+        <div class="grid-row-wrapper">
+          <span class="speaker speaker1">Didier Forest</span>
+          <span class="timewrap"><span class="timestamp">01:35</span></span>
+          <p>An astronomer named <a href="https://en.wikipedia.org/wiki/Nikolai_Kardashev">Nikolai Kardashev</a>
+            proposed a scale <a href="#" class="tooltip" data-tooltip="Navigate to text in video is not implemented"><span class="current">to quantify an evolving civilization’s increasing
+              energy needs.</span></a>
+            <br>In the first evolutionary stage, which we’re currently in, planet-based fuel sources like
+            fossil
+            fuels, solar panels and nuclear power plants are probably enough to settle other planets inside our own
+            solar
+            system, but not much beyond that. For a civilization on the third and final stage, expansion on a galactic
+            scale would require about 100 billion times more energy than the full 385 yotta joules our sun releases
+            every
+            second. Barring a breakthrough in exotic physics, there’s only one energy source that could suffice: a
+            supermassive black hole. </p>
+        </div>
+        <span class="speaker speaker2">Addison Anderson</span>
+        <span><span class="timestamp">01:49</span></span>
+        <p>It’s counterintuitive to think of black holes as energy sources, but that’s exactly what they are, thanks to
+          their accretion disks: circular, flat structures formed by matter falling into the event horizon. </p>
+      </div>
     </section>
   </main>
   <script src="index.js"></script>

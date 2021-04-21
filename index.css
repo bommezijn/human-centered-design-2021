@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+:root {
+  --main-text: hsl(0, 0%, 0%);
+  --bg: #060609;
+  --test: #303046;
+  --grey: #f2f2f2;
+}
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--grey);
+  color: var(--main-text);
+}
+
+nav {
+  background-color: var(--test);
+  padding: 0.5em 0em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+p {
+  max-width: clamp(600px, 65ch, 75ch);
+}
+
+nav ul {
+display: flex;
+}
+
+nav ul a {
+  flex-grow: 1;
+  color: var(--grey);
+  text-decoration: none;
+}
+
+nav li {
+  display: block;
+  margin-right: 1em;
+}
+
+header {
+  margin-left: 2em;
+}
+
+header::after {
+  display: inline-block;
+  content: '';
+  width: 50vw;
+  height: 2px;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
+  margin: 0 auto;
+}
+
+
+main {
+  margin: 0 2em;
+}
+
+.question::before {
+  content: 'Q:';
+  padding-right: 0.5em;
+  color: red;
+}
+
+/* 
+TEST ONE STYLING
+*/
+
+#testOne > .transcript {
+  display: grid;
+  grid-template-columns: 100px 75px 1fr;
+  row-gap: 1em;
+}
+
+.information{
+  opacity: 25%;
+}
+
+#testOne p {
+  margin-top: 0;
+}
+
+.grid-row-wrapper {
+  display: contents;
+}
+
+.grid-row-wrapper > * {
+  /* background-color: #ffcc00; */
+
+}
+
+.current {
+  background-color:rgb(205, 233, 255);
+  font-weight: bold;
+}
+
+.sound {
+  font-style: italic;
+  background-color: hsla(48, 100%, 50%, 0.25);
+  padding: 0.5em;
+}
+
+.speaker {
+  color: #F4A352;
+  font-weight: bold;
+  height: max-content;
+  padding: 0px 10px 0px 5px;
+}
+
+.speaker1 {
+  color: #8E56E5;
+}
+
+.speaker2 {
+  color: #F17DC6;
+}
+
+.timewrap {
+  height: 230.4px;
+}
+
+.timestamp {
+  padding: 0.2em;
+  border-radius: 5px;
+  opacity: 0.5;
+  background-color: hsla(0, 0%, 85%, 0.54);
+}
+
+div p {
+  /* padding: 0.1em 0.4em 0.1em 0.1em; */
+  padding: 0em 0.2em 0.4em;
+}
+
+
+/* 
+++++++++++
+SOME COPY PASTE
+++++++++++
+*/
+
+.tooltip {
+  display: inline;
+  position: relative;
+}
+
+.tooltip:hover {
+  color: #c00;
+  text-decoration: none;
+}
+
+.tooltip:hover:after {
+  background: #111;
+  background: rgba(0, 0, 0, .8);
+  border-radius: .5em;
+  bottom: 1.35em;
+  color: #fff;
+  content: attr(data-tooltip);
+  display: block;
+  left: 1em;
+  padding: .3em 1em;
+  position: absolute;
+  text-shadow: 0 1px 0 #000;
+  white-space: nowrap;
+  z-index: 98;
+}
+
+.tooltip:hover:before {
+  border: solid;
+  border-color: #111 transparent;
+  border-color: rgba(0, 0, 0, .8) transparent;
+  border-width: .4em .4em 0 .4em;
+  bottom: 1em;
+  content: "";
+  display: block;
+  left: 2em;
+  position: absolute;
+  z-index: 99;
+}
