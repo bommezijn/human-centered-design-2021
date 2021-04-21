@@ -67,9 +67,47 @@ main {
   color: red;
 }
 
+:focus {
+  box-shadow: 0 0 0 2px var(--test);
+  outline-offset: 0.2em;
+}
+
 /* 
 TEST ONE STYLING
 */
+
+#testOne {
+  max-width: 825px;
+}
+
+#title-block {
+  margin: 1em 0 0;
+  display: flex;
+  align-items: center;
+}
+
+#title-block > h2 {
+  display: inline;
+  flex-grow: 1;
+  margin: 1em 0em;
+}
+
+#title-block > span {
+  margin: 1em 0em;
+  box-shadow: 0 0 0 2px red;
+  padding: 0.2em 0.4em;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background 500ms, color 500ms;
+}
+
+#title-block > span:hover, #title-block > span:focus {
+  color: white;
+  background-color: red;
+  box-shadow: 0 0 0 2px red;
+  cursor: pointer;
+}
+
 
 #testOne > .transcript {
   display: grid;
