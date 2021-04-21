@@ -8,6 +8,20 @@ body {
   background-color: #f2f2f2;
   color: #1a1a1a;
 }
+nav ul {
+  display: flex;
+  }
+  
+  nav ul a {
+    flex-grow: 1;
+    text-decoration: none;
+  }
+  
+  nav li {
+    display: block;
+    margin-right: 1em;
+  }
+
 
 main{
   width: 80vw;
