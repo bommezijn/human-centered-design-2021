@@ -72,6 +72,13 @@ main {
   outline-offset: 0.2em;
 }
 
+.alt-text {
+  color: gray;
+  opacity: 50%;
+  font-style: italic;
+  font-size: calc(100% *0.75);
+}
+
 /* 
 TEST ONE STYLING
 */
@@ -144,18 +151,21 @@ TEST ONE STYLING
 }
 
 .speaker {
-  color: #F4A352;
+  color: hsl(30, 88%, 64%);
   font-weight: bold;
   height: max-content;
   padding: 0px 10px 0px 5px;
 }
 
 .speaker1 {
-  color: #8E56E5;
+  color: hsl(263, 73%, 62%);
 }
 
 .speaker2 {
-  color: #F17DC6;
+  color: hsl(322, 81%, 72%);
+}
+.speaker3 {
+  color: hsl(349, 57%, 58%);
 }
 
 .timewrap {
