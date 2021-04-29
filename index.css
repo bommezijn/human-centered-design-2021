@@ -204,3 +204,43 @@ hidden, .hidden:not(:focus):not(:active) {
     width: 0%;
   }
 }
+
+/* More copy with tooltips */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  background-color: var(--main-acc);
+  visibility: hidden;
+  width: 200px;
+  border: 3px solid var(--main-acc);
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  right: 115%;
+}
+
+.left {
+  top: -10px;
+  right: 115%;
+}
+.right {
+  top: -5px;
+  left: 105%;
+}
+
+.bigger {
+  width: 400px !important;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip img {
+  width: 100%;
+}
