@@ -178,7 +178,7 @@ main {
   content: '';
   height: 5px;
   width: 100%;
-  background: red;
+  background: greenyellow;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -205,6 +205,14 @@ hidden, .hidden:not(:focus):not(:active) {
   }
 }
 
+#title-block > .alert {
+  top: 30em;
+  background-color: var(--acc-800);
+}
+
+#title-block > .alert:after {
+background: red;
+}
 /* More copy with tooltips */
 .tooltip {
   position: relative;
