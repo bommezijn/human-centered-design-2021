@@ -1,9 +1,14 @@
-console.log(`Hello Humanity`)
+console.log(`Hello Darice!`)
 
-const notify = document.querySelector('#title-block span')
-const titleBlock = document.querySelector('#title-block')
+let test = document.getElementById('notify');
+let hide = document.getElementsByClassName('alert')[0];
 
-notify.addEventListener('click', () => {
-  notify.textContent = 'Waiting for transcript'
-  console.log(notify.textContent)
-}) 
+test.addEventListener('click', () => {
+  console.log('ey');
+  hide.classList.toggle('hidden');
+  setTimeout(hideClass, 4000)
+})
+
+function hideClass() {
+    hide.classList.toggle('hidden');
+}

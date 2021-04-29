@@ -1,122 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
 :root {
-  --main-text: hsl(0, 0%, 0%);
-  --bg: #060609;
-  --test: #303046;
-  --grey: #f2f2f2;
+  --debug: #ffcc00; 
+  --ff: 'Roboto', sans-serif;
+  --bg: hsl(21, 100%, 92%);
+  --main-txt: hsl(18, 8%, 9%);
+  --main-acc: hsl(0, 0%, 0%);
+  --acc-txt: hsl(0, 0%, 100%);
+  --snd-txt: hsl(0, 0%, 40%);
+  --radius: 1.25rem;
+  --acc-800: hsl(227, 71%, 87%);
+
 }
-*{
+
+* {
+  font-family: var(--ff);
   box-sizing: border-box;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
   line-height: 1.6;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--grey);
-  color: var(--main-text);
+:focus {
+  outline-offset: 8px;
+  outline: 2px solid var(--main-acc);
 }
 
-nav {
-  background-color: var(--test);
-  padding: 0.5em 0em;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--main-txt);
 }
 
 p {
-  max-width: clamp(600px, 65ch, 75ch);
+  max-width: clamp(65ch, 600px, 75ch);
+}
+
+nav{
+  display: flex;
+  padding-right: 1em;
 }
 
 nav ul {
-display: flex;
-}
-
-nav ul a {
   flex-grow: 1;
-  color: var(--grey);
+  align-content: center;
+}
+nav ul a {
   text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.75ch;
+  border-bottom: 0px solid black;
 }
 
-nav li {
-  display: block;
-  margin-right: 1em;
+nav ul a:hover {
+  border-bottom: 2px solid black;
+}
+.button {
+  height: 2em;
+  margin: 19.36px 0;
+  padding: 0 1em;
+  background-color: var(--main-acc);
+  color: var(--acc-txt);
+  border: 2px solid var(--main-acc);
+  border-radius: var(--radius);
+  transition: background-color 100ms, color 200ms, box-shadow 400ms;
 }
 
-header {
-  margin-left: 2em;
+.button:hover, .button:focus {
+  background-color: transparent;
+  color: var(--main-txt);
+  box-shadow: 4px 2px 0 4px var(--main-acc);
 }
 
-header::after {
-  display: inline-block;
-  content: '';
-  width: 50vw;
-  height: 2px;
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
+.button:active {
+  background-color: transparent;
+  border: 2px solid var(--main-acc);
+}
+
+main {
+  max-width: 80vw;
+  /* background-color: var(--debug); */
   margin: 0 auto;
 }
 
-
-main {
-  margin: 0 2em;
-}
-
-.question::before {
-  content: 'Q:';
-  padding-right: 0.5em;
-  color: red;
-}
-
-:focus {
-  box-shadow: 0 0 0 2px var(--test);
-  outline-offset: 0.2em;
-}
-
-.alt-text {
-  color: gray;
-  opacity: 50%;
-  font-style: italic;
-  font-size: calc(100% *0.75);
-}
-
-/* 
-TEST ONE STYLING
-*/
-
-#testOne {
-  max-width: 825px;
-}
-
-#title-block {
-  margin: 1em 0 0;
+.info-card {
+  background-color: var(--acc-txt);
   display: flex;
-  align-items: center;
+  padding: 0.75em;
+  margin-bottom: 2em;
 }
-
-#title-block > h2 {
-  display: inline;
+.podcast-info {
   flex-grow: 1;
-  margin: 1em 0em;
+  padding-right: 1em;
 }
 
-#title-block > span {
-  margin: 1em 0em;
-  box-shadow: 0 0 0 2px red;
-  padding: 0.2em 0.4em;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: background 500ms, color 500ms;
+.podcast-info p span {
+  font-style: italic;
+  color: var(--snd-txt);
+  padding-right: 0.5rem;
 }
 
-#title-block > span:hover, #title-block > span:focus {
-  color: white;
-  background-color: red;
-  box-shadow: 0 0 0 2px red;
-  cursor: pointer;
+.podcast-desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Change this line if you want. In this case it trimmed the text to 3 lines. */
+  overflow: hidden;
 }
 
-
-#testOne > .transcript {
+/* COPY FROM TEST 3 */
+#text > .transcript {
   display: grid;
   grid-template-columns: 100px 75px 1fr;
   row-gap: 1em;
@@ -126,17 +117,8 @@ TEST ONE STYLING
   opacity: 25%;
 }
 
-#testOne p {
+#text p {
   margin-top: 0;
-}
-
-.grid-row-wrapper {
-  display: contents;
-}
-
-.grid-row-wrapper > * {
-  /* background-color: #ffcc00; */
-
 }
 
 .current {
@@ -179,53 +161,46 @@ TEST ONE STYLING
   background-color: hsla(0, 0%, 85%, 0.54);
 }
 
-div p {
-  /* padding: 0.1em 0.4em 0.1em 0.1em; */
-  padding: 0em 0.2em 0.4em;
+.alert {
+  position: fixed;
+  right: 0;
+  margin: 0 auto;
+  background-color: var(--acc-txt);
+  color: var(--main-txt);
+  width: 18em;
+  padding: 0.8em 1.3em;
+  margin-right: 1em;
+  border-radius:4px;
+  border: 3px solid var(--main-acc);
 }
 
-
-/* 
-++++++++++
-SOME COPY PASTE
-++++++++++
-*/
-
-.tooltip {
-  display: inline;
-  position: relative;
-}
-
-.tooltip:hover {
-  color: #c00;
-  text-decoration: none;
-}
-
-.tooltip:hover:after {
-  background: #111;
-  background: rgba(0, 0, 0, .8);
-  border-radius: .5em;
-  bottom: 1.35em;
-  color: #fff;
-  content: attr(data-tooltip);
-  display: block;
-  left: 1em;
-  padding: .3em 1em;
+.alert:after{
+  content: '';
+  height: 5px;
+  width: 100%;
+  background: red;
   position: absolute;
-  text-shadow: 0 1px 0 #000;
+  bottom: 0;
+  left: 0;
+  margin-left: 0;
+  animation: timer 4050ms 1s ease-in;
+}
+
+hidden, .hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
   white-space: nowrap;
-  z-index: 98;
+  width: 1px;
 }
 
-.tooltip:hover:before {
-  border: solid;
-  border-color: #111 transparent;
-  border-color: rgba(0, 0, 0, .8) transparent;
-  border-width: .4em .4em 0 .4em;
-  bottom: 1em;
-  content: "";
-  display: block;
-  left: 2em;
-  position: absolute;
-  z-index: 99;
+@keyframes timer {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
 }

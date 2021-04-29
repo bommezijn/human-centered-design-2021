@@ -5,103 +5,70 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>test: humanity</title>
   <link rel="stylesheet" href="index.css">
+  <script defer src="index.js"></script>
+  <title>Darice's ideal transcript</title>
 </head>
 
 <body>
   <nav>
     <ul>
-      <a href="/index.html">Humane</a>
-      <li><a href="/lineLength/">Line Length</a></li>
-      <li><a href="/transcriptConcept/">Transcript Concept</a></li>
-      <li><a href="https://www.github.com/dewarian/human-centered-design-2021">Github</a></li>
-      <li></li>
+      <a href="/index.html">Transcript</a>
     </ul>
+    <button id="notify" class="button">subscribe new transcript</button>
   </nav>
-  <header>
-    <h1>Test: Humane interaction</h1>
-    <p>The idea of this test is find out what feels more humane to you.</p>
-    <p class="question">The transcript about <i>the power of the black hole</i> is spoken by multiple people, which
-      speaker looks more pleasant to read?</p>
-    <p class="question">Instead of always searching for transcript yourself, What is your opininion about subscribing
-      and receiving a notification it is available? <br> <span class="alt-text">A possibility of a chrome extension that
-        keeps record of the podcasts you want to read?</span></p>
-  </header>
   <main>
-    <section id="testOne">
-      <div style="max-width:854px">
-        <div style="position:relative;height:0;padding-bottom:56.25%">
-          <iframe
-            src="https://embed.ted.com/talks/fabio_pacucci_could_we_harness_the_power_of_a_black_hole/transcript#t-50750"
-            width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0"
-            scrolling="no" allowfullscreen>
-          </iframe>
-        </div>
+    <p class="alert hidden">
+      We'll alert you when the transcription for <b>The one with FRIENDS</b> is available!
+    </p>
+    <section class="info-card">
+      <div class="podcast-info">
+        <h1>The One Where Heckles Dies</h1>
+        <p class="podcast-rel"><span>Release</span>Apr 14, 2021</p>
+        <p class="podcast-dura"><span>Duration</span>47:41</p>
+        <p class="podcast-desc"><span>Podcast desc.</span>The One With The Guest Who Picks Their Favourite Episode. Grab
+          a coffee in a massive china cup, settle down in your huge loft apartment and let your two newest Friends, Dave
+          and Pete, guide you through the greatest sitcom of the 1990s. Could it BE any more exciting? </p>
+        <p class="podcast-src"><span>source</span><a href="https://play.acast.com/s/friendswithfriends">Acast</a></p>
       </div>
-      <div id="title-block">
-        <h2>Transcription</h2>
-        <span>Notify for transcript</span>
-      </div>
+      <iframe id="podcast" title="Embed Player"
+        src="https://embed.acast.com/7146590b-19a1-40dc-b253-19182e524c2a/40642d1b-a82c-481b-99bc-a789fc63fde8"
+        scrolling="no" frameBorder="0"></iframe>
+    </section>
+    <section id="text">
+      <header id="title-block">
+        <h2>Transcript</h2>
+        <button for="showText" id="showText" class="button">Show all text</button>
+      </header>
       <div class="transcript">
-        <span class="information">Speaker</span>
-        <span class="information">time</span>
+        <span class="information attempt">Speaker</span>
+        <span class="information attempt">time</span>
         <p class="information">Says</p>
-        <span>Intro.</span>
-        <span><span class="timestamp">00:00</span></span>
-        <p class="sound">[Introductory Alien Space Sound]</p>
-        <span class="speaker">Rachel Green</span>
+        <span class="attempt">Intro.</span>
+        <span class="attempt"><span class="timestamp">00:00</span></span>
+        <p class="sound attempt">[Scene: Central Perk, Chandler, Joey, Phoebe, and Monica are there.]</p <span class="speaker">
+        Monica</span>
         <span><span class="timestamp">00:43</span></span>
-        <p>Imagine a distant future when humans reach beyond our pale blue dot, forge cities on planets thousands of
-          light-years away, and maintain a galactic web of trade and transport. What would it take for our civilization
-          to make that leap? There are many things to consider— <br> <i>how would we communicate?</i> <br><i>What might
-            a galactic
-            government look like?</i><br> And one of the most fundamental of all: where would we get enough energy to
-          power that
-          civilization— its industry, its terraforming operations, and its starships? </p>
-        <div class="grid-row-wrapper">
-          <span class="speaker speaker1">Monica Geller</span>
-          <span class="timewrap"><span class="timestamp">01:35</span></span>
-          <p>An astronomer named <a href="https://en.wikipedia.org/wiki/Nikolai_Kardashev">Nikolai Kardashev</a>
-            proposed a scale <a href="#" class="tooltip"
-              data-tooltip="Navigate to text in video is not implemented"><span class="current">to quantify an evolving
-                civilization’s increasing
-                energy needs.</span></a><br>
-            <br>In the first evolutionary stage, which we’re currently in, planet-based fuel sources like
-            fossil
-            fuels, solar panels and nuclear power plants are probably enough to settle other planets inside our own
-            solar
-            system, but not much beyond that. For a civilization on the third and final stage, expansion on a galactic
-            scale would require about 100 billion times more energy than the full 385 yotta joules our sun releases
-            every
-            second. Barring a breakthrough in exotic physics, there’s only one energy source that could suffice: a
-            supermassive black hole. </p>
-        </div>
-        <span class="speaker speaker2">Joey Tribbiani</span>
+        <p>There's nothing to tell! <br>He's just some guy I work with!</p>
+        <span class="speaker speaker2">Chandler</span>
         <span><span class="timestamp">01:49</span></span>
-        <p>It’s counterintuitive to think of black holes as energy sources, but that’s exactly what they are, thanks to
-          their accretion disks: circular, flat structures formed by matter falling into the event horizon. </p>
-        <span class="speaker speaker3">Chandler Bing</span>
+        <p>All right Joey, be nice. ..So does he have a hump? A hump ...aand a hairpiece?</p>
+        <span class="speaker speaker3">Phoebe</span>
         <span><span class="timestamp">02:42</span></span>
-        <p>Because of conservation of angular momentum, particles there don’t just plummet straight into the black hole.
-          Instead, they slowly spiral.</p>
-        <span class="speaker speaker3">Chandler Bing</span>
-        <span><span class="timestamp">02:42</span></span>
-        <p>Due to the intense gravitational field of the black hole, these particles convert
-          their potential energy to kinetic energy as they inch closer to the event horizon.</p>
-        <span class="speaker speaker3">Chandler Bing</span>
-        <span><span class="timestamp">02:42</span></span>
-        <p> Particle interactions allow
-          for this kinetic energy to be radiated out into space at an astonishing matter-to-energy efficiency: 6% for
-          non-rotating black holes, and up to 32% for rotating ones.</p>
-        <span class="speaker speaker3">Chandler Bing</span>
-        <span><span class="timestamp">02:42</span></span>
-        <p> This drastically outshines nuclear fission,
-          currently the most efficient widely available mechanism to extract energy from mass. Fission converts just
-          0.08% of a Uranium atom into energy. </p>
+        <p>W-W-Wait, does he eat chalk?</p>
+        <span>Scene</span>
+        <span><span class="timestamp">02:49</span></span>
+        <p class="sound">(They all stare, bemused.)</p>
+        <span class="speaker speaker3">Phoebe</span>
+        <span><span class="timestamp">03:01</span></span>
+        <p>Just, euuhh 'cause, I don't want her to go through what I went through with Carl- oh!</p>
+        <span class="speaker speaker3">Monica</span>
+        <span><span class="timestamp">03:12</span></span>
+        <p>Okay, everybody rrrelaxxx. This is not even a date. It's just two people going out to dinner and--- ... <i>not
+          having sex.</i></p>
       </div>
     </section>
   </main>
-  <script src="index.js"></script>
 </body>
+
 </html>
